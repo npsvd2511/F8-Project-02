@@ -31,8 +31,8 @@ a {
 
 .btn {
     display: inline-block;
+    padding: 0 10px;
     min-width: 118px;
-    width: 50px;
     line-height: 50px;
     text-align: center;
     background: var(--primary-color-1);
@@ -272,7 +272,6 @@ a {
 .popular {
     margin-top: 135px;
     padding: 65px 0;
-    background: #e5e5e5;
 }
 
 .popular-top {
@@ -309,5 +308,88 @@ a {
 .popular-top .controls-btn:hover {
     background-color: var(--primary-color-2);
     color: #fff;
+    cursor: pointer;
+}
+
+.popular .course-list {
+    margin-top: 55px;
+    display: flex;
+    gap: 30px;
+}
+
+.popular .course-item {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 12px;
+    border: 1px solid #e2dfda;
+}
+
+.popular .course-item:hover {
+    box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
+    border-color: transparent;
+}
+
+.popular .course-item .thumb {
+    width: calc(100% + 2px);
+    height: 278px;
+    object-fit: cover;
+    border-radius: 12px 12px 0px 0px;
+    margin: -1px;
+}
+
+.popular .course-item:nth-of-type(1) .thumb {
+    object-position: 94%;
+}
+
+.popular .course-item .info {
+    padding: 16px 22px 22px;
+}
+
+.popular .course-item .head,
+.popular .course-item .rating,
+.popular .course-item .foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular .course-item .title a {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: var(--primary-color-1);
+}
+
+.popular .course-item .value {
+    margin-left: 6px;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #fea31b;
+}
+
+.popular .course-item .desc {
+    margin-top: 6px;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #5f5b53;
+}
+
+.popular .course-item .foot {
+    margin-top: 12px;
+}
+
+.popular .course-item .price {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: var(--primary-color-1);
+}
+
+.popular .course-item .book-btn {
+    border: none;
+}
+
+.popular .course-item .book-btn:hover {
+    background-color: var(--primary-color-2);
     cursor: pointer;
 }
