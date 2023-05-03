@@ -417,12 +417,19 @@ a {
     background: #2e2100;
 }
 
-.feadback-item {
+.feedback-list {
     display: flex;
-    justify-content: space-between;
+    overflow: hidden;
 }
 
-.feadback-item .avatar {
+.feedback-item {
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.feedback-item .avatar {
     width: 72px;
     height: 72px;
     border-radius: 50%;
@@ -430,7 +437,7 @@ a {
     object-position: 48% 0;
 }
 
-.feadback-item .info .title {
+.feedback-item .info .title {
     margin-top: 18px;
     font-family: var(--font-heading);
     font-weight: 700;
@@ -439,20 +446,20 @@ a {
     color: #f7f7f7;
 }
 
-.feadback-item .info .desc {
+.feedback-item .info .desc {
     margin-top: 4px;
     font-size: 1.4rem;
     line-height: 1.86;
     color: #bfbcb3;
 }
 
-.feadback-item .info .dots {
+.feedback-item .info .dots {
     margin-top: 28px;
     display: flex;
     align-items: center;
 }
 
-.feadback-item .info .dot {
+.feedback-item .info .dot {
     width: 6px;
     height: 6px;
     border-radius: 50%;
@@ -461,16 +468,16 @@ a {
     cursor: pointer;
 }
 
-.feadback-item .info .dot.active {
+.feedback-item .info .dot.active {
     background-color: var(--primary-color-2);
     cursor: default;
 }
 
-.feadback-item .content {
+.feedback-item .content {
     width: 66%;
 }
 
-.feadback-item blockquote {
+.feedback-item blockquote {
     margin-left: 30px;
     font-style: italic;
     font-size: 2.6rem;
